@@ -1,0 +1,36 @@
+<!-- TOP BAR MENU -->
+<nav class="grid-x align-center-middle" id="topMenu" data-auto-height-"true" data-animate-height="true">
+    {{#section menu}}
+    <div class="cell auto">
+        <ul id="leftMenu" class="menu vertical medium-horizontal align-left"
+            data-responsive-menu="drilldown medium-dropdown">
+
+            <li>
+                <a href="about.html">{{about_link placeholder="ABOUT"}}</a>
+                <ul class="vertical menu">
+                    <li><a href="about.html#philosophy">{{philosophy_link placeholder="PHILOSOPHY"}}</a></li>
+                    <li><a href="about.html#team">{{team_link placeholder="TEAM"}}</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">{{contact_link placeholder="CONTACT"}}</a></li>
+            <li><a href="about.html#locations">{{locations_link placeholder="LOCATIONS"}}</a></li>
+        </ul>
+
+    </div>
+    <div class="cell small-2">
+        <div class="grid-x align-center-middle">
+            <a class="cell grid-x align-center-middle" href="index.html">
+                <img id="logo" class="cell" src="../assets/img/logo.svg">
+            </a>
+        </div>
+    </div>
+    <div class="cell auto">
+        <ul id="rightMenu" class="menu vertical medium-horizontal align-right"
+            data-responsive-menu="drilldown medium-dropdown">
+            <li><a href="press.html">{{press_link placeholder="PRESS"}}</a></li>
+            <li><a href="journal.html">{{journal_link placeholder="JOURNAL"}}</a></li>
+            <li><a href="login.html">{{members_link placeholder="MEMBERS/LOGIN"}}</a></li>
+        </ul>
+    </div>
+    {{/section }}
+</nav>

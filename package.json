@@ -1,0 +1,11 @@
+{
+  "name": "dfw",
+  "vapid": {},
+  "scripts": {
+    "start": "vapid start ."
+  },
+  "dependencies": {
+    "@vapid/cli": "^0.7.1",
+    "flatpickr": "^4.5.4"
+  }
+}

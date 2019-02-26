@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+{{> templates/htmlhead}}
+
+<body>
+  <!-- MOBILE MENU -->
+  <div id="mobileMenu" class="top-bar" data-sticky data-margin-top="0" data-responsive-toggle="topMenu"
+    data-hide-for="medium">
+    <button id="hamburger" class="menu-icon dark" type="button" data-toggle="topMenu"></button>
+    <a class="grid-x  align-right" href="index.html">
+      <img id="mobileLogo" class="cell align-self-middle" src="../assets/img/logo.svg" />
+    </a>
+  </div>
+
+  {{> templates/topmenu}}
+
+  {{#section Press}}
+  <!-- HERO SECTION -->
+  <div class="hero pressHero grid-x align-center-middle text-align-center heroFont">
+    <h1 class="cell small-10 medium-8">
+      {{Press_Hero_Title placeholder="PRESS"}}
+    </h1>
+  </div>
+
+  <!-- DESCRIPTION SECTION -->
+  <div class="grid-x align-center-middle">
+    <h3 class="wrap small-8 medium-6 cell">
+      {{Description placeholder="We’ve collected some kind words people have said about us over the past few years."}}
+    </h3>
+
+    <div class="grid-x align-center-middle grid-padding-x grid-padding-y text-align-center bottomMargin">
+      <div class="cell medium-6 grid-x align-center-middle">
+        <div class="cell small-10">
+          <h3 class="bodyFont">
+            “{{Press_Quote_1 placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
+
+              }}”
+          </h3>
+          <h6 class="topMargin15 headerFont">
+            - {{Press_Source_1 placeholder="NEW YORK TIMES"}}
+          </h6>
+        </div>
+      </div>
+      <div class="cell medium-6 grid-x align-center-middle">
+        <div class="cell small-10">
+          <h3 class="bodyFont">
+            “{{Press_Quote_2 placeholder="Danford Works is the greatest innovation in physical therapy."}}”
+          </h3>
+          <h6 class="topMargin15 headerFont">
+            - {{Press_Source_2 placeholder="The Washington Post"}}
+          </h6>
+        </div>
+      </div>
+      <div class="cell medium-6 grid-x align-center-middle">
+        <div class="cell small-10">
+          <h3 class="bodyFont">
+            “{{Press_Quote_3 placeholder="I’ve never felt better"}}”
+          </h3>
+          <h6 class="topMargin15 headerFont">
+            - {{Press_Source_3 placeholder="Goop"}}
+          </h6>
+        </div>
+      </div>
+      <div class="cell medium-6 grid-x align-center-middle">
+        <div class="cell small-10">
+          <h3 class="bodyFont">
+            “{{Press_Quote_4 placeholder="Danford Works is rapidly changing the face of physical therapy. Gone are suburban strip-mall connotations."}}”
+          </h3>
+          <h6 class="topMargin15 headerFont">
+            - {{Press_Source_4 placeholder="The Economist"}}
+          </h6>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{/section}}
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="grid-x align-center">
+      <div id="footerOne" class="cell small-6 medium-4">
+        <label class="headerFont">DIRECTORY</label>
+        <div class="grid-x align-left topMargin15">
+          <div class="grid-y cell small-6">
+            <a href="index.html" class="footerLabel">Home</a>
+            <a href="about.html" class="footerLabel">About</a>
+            <a href="about.html#philosophy" class="footerLabel">Philosophy</a>
+            <a href="about.html#locations" class="footerLabel">Locations</a>
+          </div>
+          <div class="cell grid-y small-6">
+            <a href="about.html#team" class="footerLabel">Team</a>
+            <a href="press.html" class="footerLabel">Press</a>
+            <a href="journal.html" class="footerLabel">Journal</a>
+            <a href="contact.html" class="footerLabel">Contact</a>
+          </div>
+        </div>
+      </div>
+      <div id="footerTwo" class="cell medium-4 show-for-medium">
+        <div class="grid-x align-center">
+          <img id="footerLogo" class="cell" src="../assets/img/smallLogo.svg" />
+          <p class="text-align-center cell topMargin30 align-self-bottom footerText">
+            © 2018 Danford Works
+          </p>
+        </div>
+      </div>
+      <div id="footerThree" class="cell small-6 medium-4">
+        <div class="grid-y align-spaced">
+          <div class="grid-x align-right">
+            <a href="http://instagram.com" class="socialIcon cell small-1">
+              <img class="" src="../assets/img/social/instagram.svg" />
+            </a>
+            <a href="http://facebook.com" class="socialIcon cell small-1">
+              <img class="" src="../assets/img/social/facebook-f.svg" />
+            </a>
+            <a href="http://twitter.com" class="socialIcon cell small-1">
+              <img class="" src="../assets/img/social/twitter.svg" />
+            </a>
+          </div>
+          <a href="mailto:hello@danfordworks.com"
+            class="topMargin15 footerText text-align-right">hello@danfordworks.com</a>
+          <p class="footerText text-align-right">212.678.1228</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/fetch.js"></script>
+</body>
+
+</html>

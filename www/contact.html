@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+{{> templates/htmlhead}}
+
+<body>
+  <!-- MOBILE MENU -->
+  <div id="mobileMenu" class="top-bar" data-sticky data-margin-top="0" data-responsive-toggle="topMenu"
+    data-hide-for="medium">
+    <button id="hamburger" class="menu-icon dark" type="button" data-toggle="topMenu"></button>
+    <a class="grid-x  align-right" href="index.html">
+      <img id="mobileLogo" class="cell align-self-middle" src="../assets/img/logo.svg" />
+    </a>
+  </div>
+
+  {{> templates/topmenu}}
+
+  <div class="grid-x align-center-middle topBottom">
+    <div class="cell small-10">
+      <h2 class="letterSpacingBig">GET IN TOUCH</h2>
+      <div class="grid-x align-center-middle topBottom">
+        <h3 class="cell small-10 bodyFont">
+          Let’s chat, whether you’re looking for advice, need some information
+          regarding physical therapy, or are seeking corporate sponsorship.
+        </h3>
+      </div>
+
+      <div id="contactList" class="grid-x align-center-middle grid-padding-y">
+        <div class="cell medium-3 grid-y align-center-middle">
+          <div class="cell">
+            <h5 class="noPaddingMargin bodyFont">GENERAL</h5>
+            <a href="mailto:info@danfordworks.com" class="italic">info@danfordworks.com</a>
+          </div>
+        </div>
+        <div class="cell medium-3 grid-y align-center-middle">
+          <div class="cell">
+            <h5 class="noPaddingMargin bodyFont">PRESS</h5>
+            <a href="mailto:press@danfordworks.com" class="italic">press@danfordworks.com</a>
+          </div>
+        </div>
+        <div class="cell medium-3 grid-y align-center-middle">
+          <div class="cell">
+            <h5 class="noPaddingMargin bodyFont">PARTNERSHIPS</h5>
+            <a href="mailto:partners@danfordworks.com" class="italic">partners@danfordworks.com</a>
+          </div>
+        </div>
+        <div class="cell medium-3 grid-y align-center-middle">
+          <div class="cell">
+            <h5 class="noPaddingMargin bodyFont">LANDLINE</h5>
+            <a href="" class="italic">212.768.2289</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="grid-x align-center">
+      <div id="footerOne" class="cell small-6 medium-4">
+        <label class="headerFont">DIRECTORY</label>
+        <div class="grid-x align-left topMargin15">
+          <div class="grid-y cell small-6">
+            <a href="index.html" class="footerLabel">Home</a>
+            <a href="about.html" class="footerLabel">About</a>
+            <a href="about.html#philosophy" class="footerLabel">Philosophy</a>
+            <a href="about.html#locations" class="footerLabel">Locations</a>
+          </div>
+          <div class="cell grid-y small-6">
+            <a href="about.html#team" class="footerLabel">Team</a>
+            <a href="press.html" class="footerLabel">Press</a>
+            <a href="journal.html" class="footerLabel">Journal</a>
+            <a href="contact.html" class="footerLabel">Contact</a>
+          </div>
+        </div>
+      </div>
+      <div id="footerTwo" class="cell medium-4 show-for-medium">
+        <div class="grid-x align-center">
+          <img id="footerLogo" class="cell" src="../assets/img/smallLogo.svg" />
+          <p class="text-align-center cell topMargin30 align-self-bottom footerText">
+            © 2018 Danford Works
+          </p>
+        </div>
+      </div>
+      <div id="footerThree" class="cell small-6 medium-4">
+        <div class="grid-y align-spaced">
+          <div class="grid-x align-right">
+            <a href="http://instagram.com" class="socialIcon cell small-1">
+              <img class="" src="../assets/img/social/instagram.svg" />
+            </a>
+            <a href="http://facebook.com" class="socialIcon cell small-1">
+              <img class="" src="../assets/img/social/facebook-f.svg" />
+            </a>
+            <a href="http://twitter.com" class="socialIcon cell small-1">
+              <img class="" src="../assets/img/social/twitter.svg" />
+            </a>
+          </div>
+          <a href="mailto:hello@danfordworks.com"
+            class="topMargin15 footerText text-align-right">hello@danfordworks.com</a>
+          <p class="footerText text-align-right">212.678.1228</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/fetch.js"></script>
+</body>
+
+</html>
