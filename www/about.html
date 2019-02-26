@@ -14,17 +14,16 @@
 
   {{> templates/topmenu}}
 
+  {{#section about}}
   <!-- HERO SECTION -->
   <div class="hero aboutHero grid-x align-center-middle text-align-center heroFont">
-    <h1 class="cell small-10 medium-8">OUR STORY</h1>
+    <h1 class="cell small-10 medium-8">{{hero_text placeholder="OUR STORY"}}</h1>
   </div>
 
   <!-- DESCRIPTION SECTION -->
   <div class="grid-x align-center-middle">
     <h3 class="wrap small-10 medium-8 cell">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation
+      {{description placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation"}}
     </h3>
   </div>
 
@@ -36,22 +35,14 @@
     <div class="cell medium-6 aboutGridCell">
       <h4 class="headerFont">PHILOSOPHY</h4>
       <h5 class="bodyFont aboutGridText">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-        minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-        aliquip ex ea commodo consequat. Duis aute irure dolor in
-        reprehenderit Q
+        {{philosophy placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit Q""}}
       </h5>
     </div>
     <hr class="cell small-10 show-for-small-only" />
     <div class="cell medium-6 aboutGridCell">
-      <h4 class="headerFont">HEADER HERE</h4>
+      <h4 class="headerFont">{{no_header placeholder="HEADER HERE"}}</h4>
       <h5 class="bodyFont aboutGridText">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-        minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-        aliquip ex ea commodo consequat. Duis aute irure dolor in
-        reprehenderit Q
+        {{no_header_text placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit Q"}}
       </h5>
     </div>
     <div class="cell medium-6 show-for-medium">
@@ -65,37 +56,19 @@
       <img class="fullWidth" src="../assets/img/gym.png" />
     </div>
     <div class="cell medium-6 aboutGridCell">
-      <h4 class="headerFont">OUR LOCATIONS</h4>
+      <h4 class="headerFont">{{locations_header placeholder="OUR LOCATIONS"}}</h4>
       <p class="bodyFont aboutGridText" id="aboutText">
-        Danford Works is currently available at a variety of popup and
-        semi-permanent locations across New York City. Please see below for
-        the list.
+        {{locations_description placeholder="Danford Works is currently available at a variety of popup and semi-permanent locations across New York City. Please see below for the list."}}
       </p>
       <div class="grid-x align-center middle topMargin30">
+        {{#section locations multiple=true}}
         <div class="cell small-6">
-          <p class="noPaddingMargin">AKT</p>
+          <p class="noPaddingMargin">{{name placeholder="AKT"}}</p>
           <p class="italic">
-            190 Bowery Road<br />New York, NY 10028<br />212.989.1302
+            {{street_address placeholder="190 Bowery Road"}}<br />{{city_state_zip placeholder="New York, NY 10028"}}<br />{{phone placeholder="212.989.1302"}}
           </p>
         </div>
-        <div class="cell small-6">
-          <p class="noPaddingMargin">BROWNINGS</p>
-          <p class="italic">
-            190 Bowery Road<br />New York, NY 10028<br />212.989.1302
-          </p>
-        </div>
-        <div class="cell small-6">
-          <p class="noPaddingMargin">EQUINOX</p>
-          <p class="italic">
-            35 St. Johns Lane<br />New York, NY 10028<br />212.989.1302
-          </p>
-        </div>
-        <div class="cell small-6">
-          <p class="noPaddingMargin">SOHO HOUSE</p>
-          <p class="italic">
-            190 Bowery Road<br />New York, NY 10028<br />212.989.1302
-          </p>
-        </div>
+        {{/section}}
       </div>
     </div>
   </section>
@@ -103,97 +76,28 @@
   <!-- TEAM SECTION -->
   <section id="team" class="grid-x align-center-middle topBottom">
     <div class="cell small-10">
-      <h4 class="headerFont">THE TEAM</h4>
-      <p class="aboutGridText topMargin30">Lorem ipsum dolor sit amet</p>
+      <h4 class="headerFont">{{team_title placeholder="THE TEAM"}}</h4>
+      <p class="aboutGridText topMargin30">{{team_discription placeholder="Lorem ipsum dolor sit amet"}}</p>
 
       <div class="grid-x grid-padding-x">
+        {{#section team_members multiple=true}}
         <div class="cell medium-4">
-          <img class="fullWidth topMargin30" src="../assets/img/person.jpg" />
+          {{member_image class="fullWidth topMargin30" type=image}}
           <div class="grid-x align-center-middle">
-            <h4 class="cell headerFont topMargin30">JANE<br />DANFORD</h4>
+            <h4 class="cell headerFont topMargin30">
+              {{first_name placeholder="Jane"}}<br />{{last_name placeholder="DANFORD"}}</h4>
           </div>
           <p class="aboutGridText text-align-left">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-            enim ad minim veniam
+            {{bio placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"}}
           </p>
         </div>
-
-        <div class="cell medium-4">
-          <img class="fullWidth topMargin30" src="../assets/img/person.jpg" />
-          <div class="grid-x align-center-middle">
-            <h4 class="cell headerFont topMargin30">ROBERT<br />ARNOLD</h4>
-          </div>
-          <p class="aboutGridText text-align-left">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-            enim ad minim veniam
-          </p>
-        </div>
-
-        <div class="cell medium-4">
-          <img class="fullWidth topMargin30" src="../assets/img/person.jpg" />
-          <div class="grid-x align-center-middle">
-            <h4 class="cell headerFont topMargin30">BRENT<br />PEKARSKI</h4>
-          </div>
-          <p class="aboutGridText text-align-left">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-            enim ad minim veniam
-          </p>
-        </div>
+        {{/section}}
       </div>
     </div>
   </section>
+  {{/section}}
 
-  <!-- FOOTER -->
-  <footer>
-    <div class="grid-x align-center">
-      <div id="footerOne" class="cell small-6 medium-4">
-        <label class="headerFont">DIRECTORY</label>
-        <div class="grid-x align-left topMargin15">
-          <div class="grid-y cell small-6">
-            <a href="index.html" class="footerLabel">Home</a>
-            <a href="about.html" class="footerLabel">About</a>
-            <a href="about.html#philosophy" class="footerLabel">Philosophy</a>
-            <a href="about.html#locations" class="footerLabel">Locations</a>
-          </div>
-          <div class="cell grid-y small-6">
-            <a href="about.html#team" class="footerLabel">Team</a>
-            <a href="press.html" class="footerLabel">Press</a>
-            <a href="journal.html" class="footerLabel">Journal</a>
-            <a href="contact.html" class="footerLabel">Contact</a>
-          </div>
-        </div>
-      </div>
-      <div id="footerTwo" class="cell medium-4 show-for-medium">
-        <div class="grid-x align-center">
-          <img id="footerLogo" class="cell" src="../assets/img/smallLogo.svg" />
-          <p class="text-align-center cell topMargin30 align-self-bottom footerText">
-            © 2018 Danford Works
-          </p>
-        </div>
-      </div>
-      <div id="footerThree" class="cell small-6 medium-4">
-        <div class="grid-y align-spaced">
-          <div class="grid-x align-right">
-            <a href="http://instagram.com" class="socialIcon cell small-1">
-              <img class="" src="../assets/img/social/instagram.svg" />
-            </a>
-            <a href="http://facebook.com" class="socialIcon cell small-1">
-              <img class="" src="../assets/img/social/facebook-f.svg" />
-            </a>
-            <a href="http://twitter.com" class="socialIcon cell small-1">
-              <img class="" src="../assets/img/social/twitter.svg" />
-            </a>
-          </div>
-          <a href="mailto:hello@danfordworks.com"
-            class="topMargin15 footerText text-align-right">hello@danfordworks.com</a>
-          <p class="footerText text-align-right">212.678.1228</p>
-        </div>
-      </div>
-    </div>
-  </footer>
+  {{> templates/footer }}
 
   <script src="assets/js/app.js"></script>
   <script src="/javascripts/site.js"></script>
